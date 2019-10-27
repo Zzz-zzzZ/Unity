@@ -1,0 +1,43 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AnimationControllerTest.cs">
+    <Files>
+      <File FileName="Assets\Scripts\BeginGame.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Move.cs" Line="30" Column="10" />
+      <File FileName="Assets\Scripts\Music.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FlowerMove.cs" Line="7" Column="27" />
+      <File FileName="Assets\Scripts\Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\gun.cs" Line="28" Column="1" />
+      <File FileName="Assets\Scripts\bullet.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SceneChange.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Startgame.cs" Line="19" Column="11" />
+      <File FileName="Assets\Scripts\Back.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\test.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FollowPath.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BounceCoin.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BounceFlower.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BounceStone.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MainCameraResize.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\AnimationControllerTest.cs" Line="70" Column="28" />
+      <File FileName="Assets\Scripts\EnemySound.cs" Line="12" Column="3" />
+      <File FileName="Assets\Scripts\Help.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Life.cs" Line="31" Column="6" />
+      <File FileName="Assets\Scripts\Gun1.cs" Line="6" Column="2" />
+      <File FileName="Assets\Scripts\Flag.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MoveStone.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EnemySoundTwo.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Box.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Box2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PathDefinition.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\QiaoControaller.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Score.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\StoneBegin.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\StoneMid.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Victory.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
