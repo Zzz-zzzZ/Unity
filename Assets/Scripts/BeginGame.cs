@@ -16,10 +16,10 @@ public class BeginGame : MonoBehaviour
     {
 
     }
-    //开始游戏
+
     public void BeingingGame()
     {
-        //加载场景
+
         //Application.LoadLevel("MainScene");
         SceneManager.LoadScene("MainScene");
     }

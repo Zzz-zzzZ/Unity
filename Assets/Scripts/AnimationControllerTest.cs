@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class AnimationControllerTest : MonoBehaviour
 {
-    #region 缓存玩家的Animator组件
+    #region Store player's Animator 
     private Animator anim = null;
     private  AudioSource audio;
     Rigidbody2D rigidbody2D;
@@ -17,9 +17,10 @@ public class AnimationControllerTest : MonoBehaviour
     public GameObject Money;
     public GameObject Cavans;
     public GameObject Maincamera;
+	public float force_move = 3000;
     #endregion
 
-    #region Start 缓存
+    #region Start 
     void Start()
     {
         anim = this.GetComponent<Animator>();
@@ -28,49 +29,50 @@ public class AnimationControllerTest : MonoBehaviour
     }
     #endregion
 
-    #region Update 每帧控制
+    #region Update 
     void Update()
     {
         PlayerConroller();
     }
     #endregion
 
-    #region -PlayerConroller 具体玩家动画的方法 只实现动画不实现具体位移
+    #region -PlayerConroller the implementation of Animation & Displacement
     private void PlayerConroller()
     {
        
         if (Input.GetKey(KeyCode.A))
         {
             anim.SetBool("IsWalk", true);
-            this.transform.localScale = new Vector3(-1, 1, 1);//动画向左走
+            this.transform.localScale = new Vector3(-1, 1, 1);//Animation of LEFT
             this.transform.Translate(Vector3.left * Time.deltaTime * 5);
-            //rigidbody2D.AddForce(-Vector2.right * force_move);//实现具体位移
+            rigidbody2D.AddForce(-Vector2.right * force_move);//Displacement
         }
         else if (Input.GetKey(KeyCode.D))
         {
             anim.SetBool("IsWalk", true);
-            this.transform.localScale = new Vector3(1, 1, 1);//动画向右走
+			this.transform.localScale = new Vector3(1, 1, 1);//Animation of Right
             this.transform.Translate(Vector3.right * Time.deltaTime * 5);
-           //    rigidbody2D.AddForce(Vector2.right * force_move);////实现具体位移
+               rigidbody2D.AddForce(Vector2.right * force_move);////Displacement
         }
         else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
         {
             anim.SetBool("IsWalk", false);
         }
 
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.S))
         {
-            anim.SetTrigger("IsAttack");//动画攻击
+            anim.SetTrigger("IsAttack");//Animation of Attack
             PlayAudio("shoot");
 
         }
 
-        if (isGround && Input.GetKeyDown(KeyCode.K))
+        if (isGround && Input.GetKeyDown(KeyCode.W))
         {
-            anim.SetTrigger("IsJump");//动画跳跃
+            anim.SetTrigger("IsJump");//Animation of Jump
             isGround = false;
             Vector2 temPosition = rigidbody2D.transform.position;
-            rigidbody2D.transform.position = new Vector2(temPosition.x, temPosition.y + 2f);//实现具体跳跃位移
+            //rigidbody2D.transform.position = new Vector2(temPosition.x, temPosition.y + 2f);
+			rigidbody2D.AddForce(new Vector2(0,4000));//Displacement
             PlayAudio("Jump Small");
         }
     }
@@ -89,10 +91,7 @@ public class AnimationControllerTest : MonoBehaviour
             PlayAudio("Aced");
             transform.position = new Vector3(-14.55f, -2.44f, 0);
             Maincamera.transform.position = new Vector3(-1.8f, 1, -1);
-            /*if (UI.lif//e == 0)
-            {
-                SceneManager.LoadScene("死亡");
-            }*/
+            
         }
         if (col.gameObject.tag == "JianWu")
         {
@@ -100,10 +99,7 @@ public class AnimationControllerTest : MonoBehaviour
             transform.position = new Vector3(-14.55f, -2.44f, 0);
             Maincamera.transform.position = new Vector3(-1.8f, 1, -1);
             PlayAudio("Aced");
-            /*if (UI.lif//e == 0)
-            {
-                SceneManager.LoadScene("死亡");
-            }*/
+           
         }
 
 

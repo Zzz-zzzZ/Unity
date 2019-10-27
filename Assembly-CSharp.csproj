@@ -46,8 +46,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Gun2.cs" />
      <Compile Include="Assets\Scripts\AnimationControllerTest.cs" />
-     <Compile Include="Assets\Scripts\Back.cs" />
+     <Compile Include="Assets\Scripts\AnimationControllerTest2.cs" />
      <Compile Include="Assets\Scripts\BeginGame.cs" />
      <Compile Include="Assets\Scripts\BounceCoin.cs" />
      <Compile Include="Assets\Scripts\BounceFlower.cs" />
@@ -64,13 +65,11 @@
      <Compile Include="Assets\Scripts\Gun1.cs" />
      <Compile Include="Assets\Scripts\Help.cs" />
      <Compile Include="Assets\Scripts\Life.cs" />
-     <Compile Include="Assets\Scripts\MainCameraResize.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\MoveStone.cs" />
      <Compile Include="Assets\Scripts\Music.cs" />
      <Compile Include="Assets\Scripts\MusicChange.cs" />
      <Compile Include="Assets\Scripts\PathDefinition.cs" />
-     <Compile Include="Assets\Scripts\QiaoControaller.cs" />
      <Compile Include="Assets\Scripts\SceneChange.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\Startgame.cs" />
@@ -81,6 +80,7 @@
      <Compile Include="Assets\Scripts\gun.cs" />
      <Compile Include="Assets\Scripts\test.cs" />
      <None Include="Assets\Plugins\GitHub\Editor\credits.txt" />
+     <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
      <None Include="Assets\Plugins\GitHub\Editor\eula.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Program Files/Unity Hub/Unity/5.6.7f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

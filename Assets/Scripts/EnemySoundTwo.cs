@@ -95,7 +95,7 @@ public class EnemySoundTwo : MonoBehaviour
             //PlayAudio("Firstblood");
 
             GameObject.Find("Gun").GetComponent<test>().PlayAudio("dominating");
-            //查找  组件 （就是找到这个脚本） 然后调用 播放音效的代码就OK啦  勾傻瓜吧
+            
 
             this.gameObject.SetActive(false);
             // audio.Play();

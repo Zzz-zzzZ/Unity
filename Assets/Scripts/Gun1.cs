@@ -32,7 +32,7 @@ public class Gun1 : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             Fire();
             //InvokeRepeating(methodName: "Fire", time: 1, repeatRate: rate);

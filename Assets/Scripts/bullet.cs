@@ -19,13 +19,10 @@ public class bullet : MonoBehaviour {
     {
         if (other.tag == "Enemy"&& other.tag == "DoubleKill")
         {
-            //PlayAudio("Firstblood");
+            
             Debug.Log("6561654654665");
             GameObject.Find("Main Camera").GetComponent<test>().PlayAudio("enemydeath");
-            //查找  组件 （就是找到这个脚本） 然后调用 播放音效的代码就OK啦  勾傻瓜吧
-
-            //this.gameObject.SetActive(false);
-            // audio.Play();
+            
         }
     }
 }

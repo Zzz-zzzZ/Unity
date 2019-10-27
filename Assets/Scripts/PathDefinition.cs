@@ -6,13 +6,13 @@ using System.Linq;
 public class PathDefinition : MonoBehaviour
 {
 
-    public Transform[] points;//路径点集合
+    public Transform[] points;//set of path points
 
     public IEnumerator<Transform> GetPathsEnumerator()
-    {//自定义迭代器(用来返回路径点)
+    {//
         if (points == null || points.Length < 1)
             yield break;
-        var direction = 1;//移动方向
+        var direction = 1;//direction of moving
         int index = 0;
         while (true)
         {
@@ -28,15 +28,15 @@ public class PathDefinition : MonoBehaviour
     }
 
     public void OnDrawGizmos()
-    {//重写OnDrawGizmos实现在scene视图中画线
+    {//overwrite 
         if (points == null || points.Length < 2)
             return;
-        var pt = points.Where(t => t != null).ToList();//使用的Linq语言集成查询，找出路径点集合中不为空的点
+        var pt = points.Where(t => t != null).ToList();
         if (pt.Count < 2)
             return;
         for (int i = 1; i < pt.Count; i++)
         {
-            Gizmos.DrawLine(pt[i - 1].position, pt[i].position);//画线
+            Gizmos.DrawLine(pt[i - 1].position, pt[i].position);
         }
     }
 }
